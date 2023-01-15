@@ -1,0 +1,273 @@
+@charset "utf-8";
+/*웹리뉴얼 기본형 fermenter*/ 
+
+/* main1 mainphoto */
+.mainphoto{
+    background-image: url(../img/sub_main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 300px;
+    margin-bottom: 94px;
+    text-indent: -999999px;
+}
+/* main2 product */
+.product{
+    margin-bottom: 160px;
+}
+.product_in{
+    width: 1240px;
+    margin: 0 auto;
+}
+.fermenter_top{
+    position: relative;
+}
+.fermenter_menu{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 22px;
+}
+.fermenter_menu div{
+    margin-right: 20px;
+}
+.p_home::after, .p_fermenter::after{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/sub_arrow.png);
+    width: 5px;
+    height: 9px;
+    margin-left: 20px;
+}
+.fermenter_menu div a{
+    color: #333;
+    font-size: 13px;
+}
+.fermenter_menu div a:hover{
+    color: #c9151e;
+}
+.fermenter_title{
+    font-size: 28px;
+    line-height: 1em;
+    font-weight: 700;
+    padding-top: 27px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.fermenter_nb{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+.fermenter_nb .f_nb_btn{
+    position: relative;
+}
+.fermenter_nb .f_nb_btn a{
+    font-size: 14px;
+    color: #555;
+}
+.fermenter_nb .f_nb_btn.on a{
+    color: #c9151e;
+    font-weight: 500;
+    width: 0;
+    transition: width 0.4s ease-in-out;
+}
+.fermenter_nb .f_nb_btn a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #c9151e;
+    font-weight: 500;
+}
+.fermenter_nb .f_nb_btn.on a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #c9151e;
+    font-weight: 500;
+    transition: width 0.4s ease-in-out;
+}
+.fermenter_nb_bar{
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background-color: #ccc;
+    margin-left: 18px;
+    margin-right: 18px;
+    vertical-align: top;
+    margin-top: 4px;
+}
+.fermenter_nb p:last-child::after{
+    content: none;
+}
+.fermenter_sort{
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    width: 135px;
+}
+.default_btn{
+    position: relative;
+    border: 1px solid #ddd;
+}
+.default_btn a{
+    display: block;
+    font-size: 13px;
+    color: #666;
+    padding: 6px 15px;
+}
+.triangle{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    transform: rotate(135deg);
+    margin: 0 0 2px 40px;
+}
+.fermenter_sort_list{
+    position: absolute;
+    display: none;
+    top: 33px;
+    left: 0%;
+    width: 100%;
+    background-color: #fff;
+}
+.fermenter_sort_list.on{
+    display: block;
+}
+.fermenter_sort_list ul{
+    border: 1px solid #ddd;
+    padding: 5px 0;
+}
+.fermenter_sort_list ul li a{
+    display: block;
+    color: #666;
+    padding: 2px 15px;
+}
+.fermenter_middle{
+    margin-top: 86px;
+}
+.p_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.p_list li{
+    width: 298px;
+    margin-bottom: 110px;
+}
+.p_text{
+    margin-left: 22px;
+    margin-top: 13px;
+}
+.p_best::before{
+    content: "BEST";
+    display: inline-block;
+    width: 42px;
+    background-color: #c9151e;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 8px;
+    padding-bottom: 1px;
+}
+.goods{
+    display: block;
+}
+.p_list_1{
+    font-size: 15px;
+    color: #333;
+}
+
+.p_list_2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    color: #000;
+}
+.p_list_3{
+    font-size: 17px;
+    color: #000;
+    margin-bottom: 38px;
+}
+.p_list_4{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+.p_list_4 .p_line, .p_list_4 .p_sale{
+   font-size: 15px;
+   margin-left: 12px;
+}
+.p_line{
+    text-decoration-line: line-through;
+}
+.p_sale{
+    color: #c9151e;
+}
+/* fermenter_pagebtn */
+.fermenter_pagebtn{
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.p_btn{
+    display: flex;
+    border: 1px solid #ccc;
+    width: 176px;
+}
+.p_btn div{
+    background-color: transparent;
+    width: 34px;
+    height: 34px;
+    text-indent: -99999px;
+    border-right: 1px solid #ccc;
+}
+.p_btn .page_num{
+    text-indent: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page_num a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.p_btn .most_next{
+    border: 0;
+}
+.most_prev a{
+    background-image: url(../img/sub_order_01.png);
+    display: block;
+    width: 34px;
+    height: 34px;
+}
+.prev a{
+    background-image: url(../img/sub_order_02.png);
+    display: block;
+    width: 34px;
+    height: 34px;
+}
+.next a{
+    background-image: url(../img/sub_order_03.png);
+    display: block;
+    width: 34px;
+    height: 34px;
+}
+.most_next a{
+    background-image: url(../img/sub_order_04.png);
+    display: block;
+    width: 34px;
+    height: 34px;
+}
